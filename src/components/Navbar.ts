@@ -12,7 +12,8 @@ export function createNavbar(): HTMLElement {
     <div class="px-6 h-16 md:px-12 lg:px-32 flex items-center justify-between max-w-7xl mx-auto relative content-center">
       
       <!-- Logo / Brand -->
-      <a href="#identity" class="nav-brand font-header text-xl font-bold tracking-tight text-text hover:text-accent transition-colors duration-200 z-[1002] relative">
+      <!-- Logo / Brand -->
+      <a href="#identity" class="nav-brand font-header text-2xl font-bold tracking-tight text-text hover:text-accent transition-colors duration-200 z-[1002] relative" aria-label="Home">
         HR
       </a>
       

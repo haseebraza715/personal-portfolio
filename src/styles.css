@@ -3,6 +3,35 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-padding-top: 6rem;
+    /* 96px - enough space for navbar + padding */
+  }
+
+  body {
+    @apply bg-[#F5F5F5] text-text;
+  }
+
+  /* Custom Scrollbar for a premium feel */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-text/20 hover:bg-text/40 transition-colors rounded-full;
+  }
+
+  /* Selection color */
+  ::selection {
+    @apply bg-accent/15 text-text;
+  }
+}
+
+@layer base {
   body {
     @apply bg-background text-text font-body antialiased;
     margin: 0;
@@ -31,16 +60,47 @@
   }
 
   @keyframes grain {
-    0%, 100% { transform: translate(0, 0); }
-    10% { transform: translate(-5%, -10%); }
-    20% { transform: translate(-15%, 5%); }
-    30% { transform: translate(7%, -25%); }
-    40% { transform: translate(-5%, 25%); }
-    50% { transform: translate(-15%, 10%); }
-    60% { transform: translate(15%, 0%); }
-    70% { transform: translate(0%, 15%); }
-    80% { transform: translate(3%, 35%); }
-    90% { transform: translate(-10%, 10%); }
+
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+
+    10% {
+      transform: translate(-5%, -10%);
+    }
+
+    20% {
+      transform: translate(-15%, 5%);
+    }
+
+    30% {
+      transform: translate(7%, -25%);
+    }
+
+    40% {
+      transform: translate(-5%, 25%);
+    }
+
+    50% {
+      transform: translate(-15%, 10%);
+    }
+
+    60% {
+      transform: translate(15%, 0%);
+    }
+
+    70% {
+      transform: translate(0%, 15%);
+    }
+
+    80% {
+      transform: translate(3%, 35%);
+    }
+
+    90% {
+      transform: translate(-10%, 10%);
+    }
   }
 
   .scroll-progress {
@@ -78,4 +138,3 @@
     position: relative;
   }
 }
-
