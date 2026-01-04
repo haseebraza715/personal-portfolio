@@ -39,16 +39,3 @@ npm run build
 npm run preview
 ```
 
-## Design System
-
-- **Colors**: 
-  - Background: #F5F5F5
-  - Text: #1A1A1A
-  - Accent: #D43F33
-- **Fonts**:
-  - Headers: Syne
-  - Body: IBM Plex Mono
-- **Spacing**: 4-8-16-32 rhythm
-- **Grid**: 12-column layout with generous gutters
-
-# personal-portfolio
