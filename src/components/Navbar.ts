@@ -13,8 +13,10 @@ export function createNavbar(): HTMLElement {
       
       <!-- Logo / Brand -->
       <!-- Logo / Brand -->
-      <a href="#identity" class="nav-brand font-header text-2xl font-bold tracking-tight text-text hover:text-accent transition-colors duration-200 z-[1002] relative" aria-label="Home">
-        HR
+      <a href="#identity" class="nav-brand text-text hover:text-accent transition-colors duration-200 z-[1002] relative flex items-center" aria-label="Home">
+        <svg viewBox="0 0 512 512" class="w-8 h-8 md:w-9 md:h-9" fill="currentColor">
+          <path d="M140 100H210V225H302V100H372V412H302V285H210V412H140V100Z" />
+        </svg>
       </a>
       
       <!-- Desktop Menu (Hidden on Mobile) -->
