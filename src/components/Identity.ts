@@ -97,15 +97,15 @@ export function createIdentitySection(): HTMLElement {
         <div class="col-span-1 lg:col-span-5 flex flex-col items-center lg:items-end mb-8 md:mb-0 gap-8 lg:mt-24">
           
           <!-- Image Container -->
-          <div class="group cursor-pointer w-48 max-w-[200px] md:w-64 lg:w-full lg:max-w-md relative">
+          <div class="group cursor-pointer w-48 max-w-[200px] md:w-64 lg:w-full lg:max-w-md relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10 hover:shadow-accent/30 transition-all duration-500">
             <!-- Subtle backdrop glow -->
             <div class="absolute inset-0 bg-accent/20 blur-[60px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             
             <img 
               src="/assets/haseeb.png" 
               alt="Haseeb Raza" 
-              class="w-full h-auto rounded-2xl object-cover shadow-lg group-hover:shadow-accent/30 grayscale group-hover:grayscale-0 transition-all duration-500 relative z-10"
-              style="aspect-ratio: 3/4; object-fit: cover; object-position: center 30%;"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-out relative z-10"
+              style="aspect-ratio: 3/4; object-fit: cover; object-position: center;"
             />
           </div>
 
