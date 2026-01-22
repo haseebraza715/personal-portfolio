@@ -68,17 +68,17 @@ export function createIdentitySection(): HTMLElement {
           
           <!-- Role - Design upgrade: Accent color, distinct weight -->
           <p class="font-body text-xl md:text-2xl font-medium text-accent mb-6 max-w-xl">
-            Data Scientist · AI Research Assistant <span class="text-text/60 font-normal text-lg ml-1">(LLMs & Agentic Systems)</span>
+            Data Scientist · Researcher  <span class="text-text/60 font-normal text-lg ml-1">(LLMs & Agentic Systems)</span>
           </p>
           
           <!-- Context line with links - Design upgrade: Better link styling -->
           <p class="font-body text-sm text-text/60 mb-8 leading-relaxed max-w-2xl">
-            Building Agentic Systems @ <a href="https://www.agenticsystemslab.org/" target="_blank" rel="noopener noreferrer" class="text-text hover:text-accent font-medium border-b border-text/20 hover:border-accent transition-colors duration-200 pb-0.5">ETH Zurich – Agentic Systems Lab</a> ·
-            SWE @ <a href="https://www.infineon.com/" target="_blank" rel="noopener noreferrer" class="text-text hover:text-accent font-medium border-b border-text/20 hover:border-accent transition-colors duration-200 pb-0.5">Infineon Technologies</a> ·
-            AI Research @ <a href="https://www.elte.hu/en" target="_blank" rel="noopener noreferrer" class="text-text hover:text-accent font-medium border-b border-text/20 hover:border-accent transition-colors duration-200 pb-0.5">ELTE University</a> ·
-            Teaching Assistant @ <a href="https://www.elte.hu/en" target="_blank" rel="noopener noreferrer" class="text-text hover:text-accent font-medium border-b border-text/20 hover:border-accent transition-colors duration-200 pb-0.5">ELTE University (DSA & Operating Systems)</a> ·
-            Leader @ <a href="https://www.elte.hu/en" target="_blank" rel="noopener noreferrer" class="text-text hover:text-accent font-medium border-b border-text/20 hover:border-accent transition-colors duration-200 pb-0.5">ELTE Data Science Club (70+ members)</a> ·
-            CS Undergraduate @ <a href="https://www.elte.hu/en" target="_blank" rel="noopener noreferrer" class="text-text hover:text-accent font-medium border-b border-text/20 hover:border-accent transition-colors duration-200 pb-0.5">ELTE University</a>
+            Building Agents @ <a href="https://www.agenticsystemslab.org/" target="_blank" rel="noopener noreferrer" class="text-text hover:text-accent font-medium border-b border-text/20 hover:border-accent transition-colors duration-200 pb-0.5">ETH Zurich – Agentic Systems Lab</a> ·
+            SWE @ <a href="https://www.infineon.com/" target="_blank" rel="noopener noreferrer" class="text-text hover:text-accent font-medium border-b border-text/20 hover:border-accent transition-colors duration-200 pb-0.5">Infineon</a> ·
+            Research @ <a href="https://www.elte.hu/en" target="_blank" rel="noopener noreferrer" class="text-text hover:text-accent font-medium border-b border-text/20 hover:border-accent transition-colors duration-200 pb-0.5">ELTE University</a> ·
+            Teaching Assistant @ <a href="https://www.elte.hu/en" target="_blank" rel="noopener noreferrer" class="text-text hover:text-accent font-medium border-b border-text/20 hover:border-accent transition-colors duration-200 pb-0.5">ELTE (DSA & Operating Systems)</a> ·
+            Leader @ <a href="https://datasciencelte.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-text hover:text-accent font-medium border-b border-text/20 hover:border-accent transition-colors duration-200 pb-0.5">ELTE Data Science Club</a> ·
+            CS Undergrad @ <a href="https://www.elte.hu/en" target="_blank" rel="noopener noreferrer" class="text-text hover:text-accent font-medium border-b border-text/20 hover:border-accent transition-colors duration-200 pb-0.5">ELTE University</a>
           </p>
           
           <!-- About text - Design upgrade: Justified, readable line-height -->
