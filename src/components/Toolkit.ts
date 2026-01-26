@@ -1,72 +1,30 @@
 export function createToolkitSection(): HTMLElement {
   const section = document.createElement('section');
   section.id = 'skills';
-  section.className = 'px-6 pt-12 pb-24 md:px-12 lg:px-32 relative overflow-hidden';
+  section.className = 'px-4 pt-8 pb-16 sm:px-6 sm:pt-12 sm:pb-20 md:px-12 md:pb-24 lg:px-32 relative overflow-hidden';
 
-  const skillCategories = [
-    // ... (keep categories same)
-    {
-      title: 'Data Science & ML',
-      skills: [
-        'Data science', 'Machine learning', 'Large language models',
-        'Agentic AI systems', 'Retrieval-augmented generation',
-        'Natural language processing', 'Algorithmic fairness', 'Model evaluation'
-      ]
-    },
-    {
-      title: 'AI / ML Methods',
-      skills: [
-        'Multi-agent systems', 'Topic modeling (BERTopic)',
-        'Embedding-based semantic analysis', 'Swarm intelligence (ACOM)',
-        'Dimensionality reduction (PCA, t-SNE)', 'Bias analysis'
-      ]
-    },
-    {
-      title: 'Technical Tools',
-      skills: [
-        'Python (NumPy, SciPy, Pandas, scikit-learn)', 'Java', 'SQL',
-        'JavaScript', 'TypeScript', 'MongoDB',
-        'Git', 'Docker', 'Linux/Bash', 'Jupyter', 'LaTeX'
-      ]
-    },
-    {
-      title: 'Research',
-      skills: [
-        'Experimental pipeline design', 'Benchmarking', 'Controlled experiments',
-        'Quantitative evaluation', 'Reproducible research'
-      ]
-    },
-    {
-      title: 'Communication',
-      skills: [
-        'Technical writing', 'Academic presentations', 'Documentation',
-        'Student mentorship', 'Peer collaboration'
-      ]
-    }
+  const allSkills = [
+    'Machine Learning', 'LLMs & Agentic Systems', 'RAG',
+    'NLP', 'Multi-Agent Systems', 'Fairness & Bias Analysis',
+    'Model Evaluation', 'Topic Modeling', 'Semantic Analysis',
+    'Python', 'Java', 'SQL', 'JavaScript/TypeScript',
+    'MongoDB', 'Git', 'Docker', 'Linux/Bash',
+    'Research Methods', 'Technical Communication', 'Mentorship'
   ];
 
   section.innerHTML = `
-    <div class="max-w-6xl mx-auto flex flex-col items-center">
-      <h2 class="font-header text-5xl md:text-7xl lg:text-8xl font-bold text-center mb-16 lg:mb-24 tracking-tight">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-header text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-8 sm:mb-12 md:mb-16 lg:mb-24 tracking-tight">
         Technical <span class="text-accent">Expertise</span>
       </h2>
       
-      <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16 lg:gap-x-24">
-        ${skillCategories.map((category) => `
-          <div class="flex flex-col items-center gap-4 lg:gap-6 group">
-            <h3 class="font-header text-xl md:text-2xl font-medium text-text/90 tracking-tight text-center relative">
-              ${category.title}
-              <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-12 h-0.5 bg-accent/30 rounded-full group-hover:w-full group-hover:bg-accent transition-all duration-500"></span>
-            </h3>
-            
-            <div class="flex flex-wrap justify-center gap-x-2 gap-y-2 px-4">
-              ${category.skills.map(skill => `
-                <span class="font-body text-sm md:text-base text-text/60 border border-text/10 bg-text/[0.02] px-4 py-1.5 rounded-full transition-all duration-300 hover:border-accent hover:text-accent hover:bg-accent/[0.05] cursor-default">
-                  ${skill}
-                </span>
-              `).join('')}
-            </div>
-          </div>
+      <div class="w-full flex flex-wrap justify-center gap-2 sm:gap-2.5 md:gap-3 lg:gap-4">
+        ${allSkills.map(skill => `
+          <span class="group relative font-body text-xs sm:text-sm md:text-base text-text/50 px-2.5 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 rounded-lg transition-all duration-300 hover:text-accent hover:text-text cursor-default">
+            <span class="relative z-10">${skill}</span>
+            <span class="absolute inset-0 bg-accent/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+            <span class="absolute bottom-0 left-0 right-0 h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
+          </span>
         `).join('')}
       </div>
     </div>
